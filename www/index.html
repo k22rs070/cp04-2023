@@ -183,6 +183,8 @@
     function btnAClick(e){
       active = true;
       startTime = new Date();
+      $("#time").css("background-color", "blue");
+      
         
     }
 
@@ -200,6 +202,8 @@
         period = 60* parseInt($("#minute").val()) + parseInt($("#second").val());
         $("#time").html("経過時間：0");
         $("#remain").html("残り時間：" + period);
+        $("#time").css("background-color", "green");
+        
         
     }
     
